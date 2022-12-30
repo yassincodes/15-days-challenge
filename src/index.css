@@ -1,0 +1,15 @@
+.title {
+    font-size: 2.5em;
+    color: rgb(216, 231, 236);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(119, 145, 192);
+}
+
+.item {
+    color: white;
+}
