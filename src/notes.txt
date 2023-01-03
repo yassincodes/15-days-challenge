@@ -1,0 +1,23 @@
+Initiate your project
+Run this command from your app's root directory:
+
+firebase init
+Specify your site in firebase.json
+Add your site ID to the firebase.json configuration file. After you get set up, see the best practices for multi-site deployment.
+
+{
+  "hosting": {
+    "site": "the-15-days-challenge",
+
+    "public": "public",
+    ...
+  }
+}
+When you're ready, deploy your web app
+Put your static files (e.g. HTML, CSS, JS) in your app’s deploy directory (the default is 'public'). Then, run this command from your app’s root directory:
+
+firebase deploy --only hosting:the-15-days-challenge
+After deploying, view your app at the-15-days-challenge.web.app
+
+Need help? Take a look at the Hosting docs
+
