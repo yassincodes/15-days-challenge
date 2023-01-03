@@ -1,7 +1,7 @@
 function Account() {
     return (
         <div>
-            hi
+            user account
         </div>
     )
 }
