@@ -6,10 +6,6 @@
     font-family: 'Varela Round', sans-serif;
   }
   
-  html {
-    
-  }
-  
   body {
     margin: 0;
     padding: 0;
@@ -20,6 +16,10 @@
     flex-direction: row-reverse;
     height: 100vh;
   }
+
+  .chakra-collapse {
+    margin-top: -10px;
+  }
   
   .website_header {
     display: none;
@@ -29,13 +29,15 @@
     width: 30%;
     display: flex;
     justify-content: center;
-    background: rgb(241, 241, 241)
+    background: white;
+    border-right: 0.5px solid #c5c5c5;
   }
   
   .routes-section {
     padding: 20px;
     width: 70%;
     overflow-y: auto;
+    background: #F2F3F5;
   }
   
   .link {
@@ -89,12 +91,14 @@
       height: 10vh;
       position:fixed;
       bottom: 0;
-      background: rgb(241, 241, 241);
+      background: white;
+      border-top: 0.5px solid #c5c5c5;
     }
   
     .routes-section {
       width: 100vw;
       height: 90vh;
+      margin-top: 20px;
     }
   
     .links {
@@ -114,7 +118,7 @@
     }
   
     .twitter_header_container {
-      margin-bottom: 8vh;
+      margin-bottom: 4.7vh;
     }
     
     .website_header {
@@ -131,6 +135,28 @@
       font-family: 'Dancing Script', cursive;
       font-size: 1.5em;
     }
-  
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
   }
   
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+
+/* home design */
+
+.Home {
+  display: flex;
+  justify-content: center;
+}
+
+.css-17mg6aq {
+  margin-bottom: 15px
+}
