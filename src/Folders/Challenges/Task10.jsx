@@ -15,11 +15,10 @@ import {
     ModalBody,
     ModalCloseButton,
     Button,
-    Center
   } from "@chakra-ui/react";
   import { motion } from "framer-motion";
   
-  function Task1() {
+  function Task10() {
     // getting the states from context
     const startIcon = (
       <svg
@@ -77,13 +76,18 @@ import {
     }
   
     return (
-      <AccordionItem style={{ borderTopWidth: "0px", borderBottomWidth: "0px", visibility: "hidden" }}>
+        <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.3 }}
+      >
+      <AccordionItem style={{ borderTopWidth: "0px", borderBottomWidth: "0px" }}>
         <h2
           style={{
-            background: "#f94144",
+            background: "#b3cbb9",
           }}
         >
-          <AccordionButton style={{ margin: "10px" }}>title</AccordionButton>
+          <AccordionButton style={{ margin: "10px" }}>Task 9 💪</AccordionButton>
         </h2>
         <AccordionPanel
           pb={4}
@@ -128,8 +132,9 @@ import {
           </ModalContent>
         </Modal>
       </AccordionItem>
+      </motion.div>
     );
   }
   
-  export default Task1;
+  export default Task10;
   

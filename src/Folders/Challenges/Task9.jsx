@@ -19,7 +19,7 @@ import {
   } from "@chakra-ui/react";
   import { motion } from "framer-motion";
   
-  function Task1() {
+  function Task9() {
     // getting the states from context
     const startIcon = (
       <svg
@@ -137,5 +137,5 @@ import {
     );
   }
   
-  export default Task1;
+  export default Task9;
   

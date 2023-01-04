@@ -19,7 +19,7 @@ import {
   } from "@chakra-ui/react";
   import { motion } from "framer-motion";
   
-  function Task4() {
+  function TaskHidden() {
     // getting the states from context
     const startIcon = (
       <svg
@@ -77,18 +77,13 @@ import {
     }
   
     return (
-        <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-      <AccordionItem style={{ borderTopWidth: "0px", borderBottomWidth: "0px" }}>
+      <AccordionItem style={{ borderTopWidth: "0px", borderBottomWidth: "0px", visibility: "hidden" }}>
         <h2
           style={{
-            background: "#457b9d",
+            background: "#f94144",
           }}
         >
-          <AccordionButton style={{ margin: "10px" }}>Task 4 🚶‍♂️</AccordionButton>
+          <AccordionButton style={{ margin: "10px" }}>title</AccordionButton>
         </h2>
         <AccordionPanel
           pb={4}
@@ -117,7 +112,7 @@ import {
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
           <ModalOverlay />
           <ModalContent>
-            <ModalHeader>Task 4</ModalHeader>
+            <ModalHeader>Task 1</ModalHeader>
             <ModalCloseButton />
             <ModalBody>hi</ModalBody>
   
@@ -133,10 +128,8 @@ import {
           </ModalContent>
         </Modal>
       </AccordionItem>
-      </motion.div>
-
     );
   }
   
-  export default Task4;
+  export default TaskHidden;
   

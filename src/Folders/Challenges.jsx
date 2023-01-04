@@ -17,6 +17,7 @@ import Task7 from "./Challenges/Task7"
 import Task8 from "./Challenges/Task8"
 import Task9 from "./Challenges/Task9"
 import Task10 from "./Challenges/Task10"
+import TaskHidden from "./Challenges/TaskHidden"
 
 function Links() {
   // getting the states from context
@@ -75,6 +76,7 @@ function Links() {
             <Task8 />
             <Task9 />
             <Task10 />
+            <TaskHidden />
           </Accordion>
         </div>
         <div className="routes-selector-section">
